@@ -1,0 +1,116 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SimpleCalculator" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="SimpleCalculator_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Create a calculator using UiPath which takes three inputs. Num1, Num2 and Operation (A, S, M, D). Show the output in a message box as a statement. For e.g. – The sum of Num1 and Num2 is Result" DisplayName="SimpleCalculator" sap:VirtualizedContainerService.HintSize="742,1637" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Double" Name="FirstNumber" />
+      <Variable x:TypeArguments="x:Double" Name="SecondNumber" />
+      <Variable x:TypeArguments="x:String" Name="Operation" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input 1st number" sap:VirtualizedContainerService.HintSize="497,271" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter 1st Number" Title="Enter Values">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:Double">[FirstNumber]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input 2nd number" sap:VirtualizedContainerService.HintSize="497,271" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter 2nd Number" Title="Enter Values">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:Double">[SecondNumber]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:LogMessage DisplayName="Log Message - input numbers" sap:VirtualizedContainerService.HintSize="497,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;A =&quot;+FirstNumber.ToString+&quot;  B =&quot;+SecondNumber.ToString]" />
+    <ui:InputDialog Options="{x:Null}" DisplayName="Choose operation" sap:VirtualizedContainerService.HintSize="497,324" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Choose:&#xA;&#x9;A - Add&#xA;&#x9;S - Subtract&#xA;&#x9;M - Multiply&#xA;&#x9;D - Divide" OptionsString="A;S;M;D" Title="Enter Values">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Operation]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:LogMessage DisplayName="Log Message - operation" sap:VirtualizedContainerService.HintSize="497,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;operation recieved is &quot;+Operation]" />
+    <Switch x:TypeArguments="x:String" DisplayName="Switch operation" Expression="[Operation]" sap:VirtualizedContainerService.HintSize="497,360" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="A" AutoCloseAfter="00:00:00" DisplayName="Message sum" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The sum of &quot;+FirstNumber.ToString+&quot; and &quot;+SecondNumber.ToString+&quot; is &quot;+(FirstNumber+SecondNumber).ToString]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="S" AutoCloseAfter="00:00:00" DisplayName="Message difference" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;The difference of &quot;+FirstNumber.ToString+&quot; and &quot;+SecondNumber.ToString+&quot; is &quot;+(FirstNumber-SecondNumber).ToString]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="M" AutoCloseAfter="00:00:00" DisplayName="Message product" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;The product of &quot;+FirstNumber.ToString+&quot; and &quot;+SecondNumber.ToString+&quot; is &quot;+(FirstNumber*SecondNumber).ToString]" />
+      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" x:Key="D" AutoCloseAfter="00:00:00" DisplayName="Message quotient" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;The quotient of &quot;+FirstNumber.ToString+&quot; and &quot;+SecondNumber.ToString+&quot; is &quot;+(FirstNumber/SecondNumber).ToString]" />
+    </Switch>
+  </Sequence>
+</Activity>
