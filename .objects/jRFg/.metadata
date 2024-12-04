@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Infosys Ltd share price  About Infosys  Key Insights - Screener",
+  "Type": "App",
+  "Id": "jRFgdEUVTU6UWMooTHIyVQ",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/jRFgdEUVTU6UWMooTHIyVQ",
+  "Created": "2024-12-03T06:04:23.1642257Z",
+  "Updated": "2024-12-03T06:04:23.1642257Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

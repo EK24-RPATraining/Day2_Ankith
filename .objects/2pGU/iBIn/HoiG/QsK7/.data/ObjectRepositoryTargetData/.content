@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xCu8HVASiEO0KzrRozCp2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demos.telerik.com/aspnet-ajax/carrental/default.aspx" CVScreenId="c448f1b9-708a-4ec0-a44f-bab48d689005" CvElementArea="288, 366, 63, 24" CvTextArea="297, 373, 44, 12" CvTextArgument="SEARCH" CvType="Button" DesignTimeRectangle="288, 368, 59, 22" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='rfdDecorated' aaname='SEARCH' check:text='SEARCH' /&gt;" Guid="0f882418-ce80-4899-8963-e0145bb53c80" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Rental Sample Application for ASP.NET AJAX | Telerik UI for ASP.NET AJAX' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="241, 211, 436, 195" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='dateRangeRow' tag='DIV' type='' aaname='                                                                ' check:innerText='or View vehicles available today' /&gt;" Guid="29072b88-e129-4008-9edd-7aa63cf687a0" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1d4d3b04ae048b288d09541d0f04c0c9.png" xmlns="">0R7UbFp8cqku7dG_FdkykKw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

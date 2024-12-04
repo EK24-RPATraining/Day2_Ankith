@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JtZ4UOflzUuIGTa0pAKBjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demos.telerik.com/aspnet-ajax/carrental/default.aspx" CVScreenId="7cb8bbad-f0ff-46aa-8ad7-535a55ace1c7" CvTextArea="1050, 574, 53, 12" CvTextArgument="Grid View" CvType="Text" DesignTimeRectangle="1019, 569, 142, 22" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Grid View' parentid='aspnetForm' tag='A' type='' class='rtbWrap' check:innerText='Grid View' /&gt;" Guid="e60adf1d-71df-4957-a15e-e5b1bd6dbe69" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Rental Sample Application for ASP.NET AJAX | Telerik UI for ASP.NET AJAX' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7cb8bbad-f0ff-46aa-8ad7-535a55ace1c7" CvTextArea="1021, 552, 105, 14" CvTextArgument="' Carousel View" CvType="Text" DesignTimeRectangle="1019, 547, 142, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Carousel View' parentid='aspnetForm' tag='A' type='' class='rtbWrap' check:innerText='Carousel View' /&gt;" Guid="8f931ba1-dcde-428e-83be-5778b1c9a8ef" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="108a095a01724bf75317d3225958a14e.png" xmlns="">0go4RiA4320-Qy4qUPGRipg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

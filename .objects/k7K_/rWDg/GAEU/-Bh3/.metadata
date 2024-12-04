@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Log Out",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "-Bh3fzVB-kK_QeEsVItQiw",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/-Bh3fzVB-kK_QeEsVItQiw",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/GAEU70flJESDZPmSh8PR4w",
+  "Created": "2024-12-03T04:35:18.8859385Z",
+  "Updated": "2024-12-03T04:35:18.8859385Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

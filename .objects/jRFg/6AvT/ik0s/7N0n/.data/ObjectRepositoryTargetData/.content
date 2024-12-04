@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="41pKZ1PXfUGiOat0dyEB1w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="screener.in/company/INFY/consolidated" CVScreenId="b68b2ba8-6ff9-4653-a82a-2b1212c017a4" CvTextArea="791, 184, 201, 14" CvTextArgument="Tata Consultancy Services Ltd" CvType="Text" DesignTimeRectangle="776, 177, 244, 30" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl parentid='desktop-search' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='desktop-search' tag='LI' type='' class='active' aaname='Tata Consultancy Services Ltd' check:innerText='Tata Consultancy Services Ltd' /&gt;" Guid="6b8ad351-e360-406f-84dd-21cd9c3bd091" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Infosys Ltd share price | About Infosys | Key Insights - Screener' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fb79fece4bb9802970b9f5e075ddb3c0.png" xmlns="">0q29o3rlJeU2Y8tTMRCGPMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

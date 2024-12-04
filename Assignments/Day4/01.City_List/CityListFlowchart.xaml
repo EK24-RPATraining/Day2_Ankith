@@ -76,7 +76,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart sap2010:Annotation.AnnotationText="Create a List Collection of type List(of string)&#xD;&#xA;Add new Item to the collection&#xD;&#xA;Check Given element exists in list or not&#xD;&#xA;Remove item from the list&#xD;&#xA;Clear the list&#xD;&#xA;Data:&#xD;&#xA;                      List_Cities&lt;string&gt; = {“Bangalore”, ”Mangalore”, “Hubli”}&#xD;&#xA;                      Add Item -&gt; “Mysore”&#xD;&#xA;                      Check Given Item in list -&gt; “Bengaluru”&#xD;&#xA;                      Remove Item from list -&gt; “Mangalore.&#xD;&#xA;                      Clear the list." DisplayName="CityListFlowchart" sap:VirtualizedContainerService.HintSize="733,474.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart sap2010:Annotation.AnnotationText="Create a List Collection of type List(of string)&#xA;Add new Item to the collection&#xA;Check Given element exists in list or not&#xA;Remove item from the list&#xA;Clear the list&#xA;Data:&#xA;                      List_Cities&lt;string&gt; = {“Bangalore”, ”Mangalore”, “Hubli”}&#xA;                      Add Item -&gt; “Mysore”&#xA;                      Check Given Item in list -&gt; “Bengaluru”&#xA;                      Remove Item from list -&gt; “Mangalore.&#xA;                      Clear the list." DisplayName="CityListFlowchart" sap:VirtualizedContainerService.HintSize="733,474.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="LargeCities" />
       <Variable x:TypeArguments="x:Boolean" Name="Exists" />
@@ -152,10 +152,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <uasc:ExistsInCollection x:TypeArguments="x:String" Index="{x:Null}" Collection="[LargeCities]" DisplayName="Exists In List" Exists="[Exists]" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ExistsInCollection`1_1" Item="Bangalore" />
                   <FlowStep.Next>
-                    <FlowDecision x:Name="__ReferenceID3" DisplayName="Exists = True" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                      <FlowDecision.Condition>
-                        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Exists = True" />
-                      </FlowDecision.Condition>
+                    <FlowDecision x:Name="__ReferenceID3" Condition="[Exists = True]" DisplayName="Exists = True" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -252,7 +249,7 @@
                                                   <av:Size x:Key="ShapeSize">110,70</av:Size>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ok&quot;]">
+                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box - ending" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;ok&quot;]">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>

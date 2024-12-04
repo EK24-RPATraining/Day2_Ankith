@@ -80,7 +80,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Get the full name in the format &quot;FirstName LastName&quot;.&#xD;&#xA;Split the full name into first name and last name.&#xD;&#xA;Convert both names to lowercase.&#xD;&#xA;Combine them to form an email address in the format &quot;firstname.lastname@company.com&quot;.&#xD;&#xA;Display the generated email address using a message box." DisplayName="FullNameEmailSequence" sap:VirtualizedContainerService.HintSize="716,1105" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Get the full name in the format &quot;FirstName LastName&quot;.&#xA;Split the full name into first name and last name.&#xA;Convert both names to lowercase.&#xA;Combine them to form an email address in the format &quot;firstname.lastname@company.com&quot;.&#xA;Display the generated email address using a message box." DisplayName="FullNameEmailSequence" sap:VirtualizedContainerService.HintSize="716,1105" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="FullName" />
       <Variable x:TypeArguments="scg:List(x:String)" Name="Name" />
@@ -136,7 +136,7 @@
         <InArgument x:TypeArguments="x:String">[String.Format("{0}.{1}@company.com",Name(0),Name(1))]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Email assigned:&quot;+Email]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Email assigned:&quot;+Email]" />
+    <ui:LogMessage DisplayName="Log Message - Email assigned" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Email assigned:&quot;+Email]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box - Email assigned" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Email assigned:&quot;+Email]" />
   </Sequence>
 </Activity>

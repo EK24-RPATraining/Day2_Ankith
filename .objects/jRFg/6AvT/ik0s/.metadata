@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Infosys Ltd share price  About Infosys  ",
+  "Type": "Screen",
+  "Id": "ik0sWz__TEaxF5DMP8x9CQ",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/ik0sWz__TEaxF5DMP8x9CQ",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/6AvTF-b1c0OCvtQe2AZ4Ag",
+  "Created": "2024-12-03T06:04:23.2077156Z",
+  "Updated": "2024-12-03T06:04:23.2077156Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -81,20 +81,12 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Read N and display all the prime numbers up to N." DisplayName="PrimeNumberDisplaySequence" sap:VirtualizedContainerService.HintSize="742,2150" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Read N and display all the prime numbers up to N." DisplayName="PrimeNumberDisplaySequence" sap:VirtualizedContainerService.HintSize="716,2323" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="Number" />
       <Variable x:TypeArguments="x:Int32" Name="RootNumber" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="PrimeNumberList">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="New List(Of String)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Boolean" Name="IsPrime">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" Value="True" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(Of String)]" Name="PrimeNumberList" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="IsPrime" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -107,7 +99,7 @@
         <OutArgument x:TypeArguments="x:Int32">[Number]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="638,1717" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[Number&gt;1]" DisplayName="go through all numbers" sap:VirtualizedContainerService.HintSize="638,1717" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
       <ui:InterruptibleWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1571" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -123,7 +115,7 @@
               <InArgument x:TypeArguments="x:Int32">[cint(Math.Sqrt(Number))]</InArgument>
             </Assign.Value>
           </Assign>
-          <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="570,754" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+          <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[RootNumber&gt;1]" DisplayName="While RootNumber&gt;1" sap:VirtualizedContainerService.HintSize="570,754" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
             <ui:InterruptibleWhile.Body>
               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,608" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
@@ -131,7 +123,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[Number Mod RootNumber = 0]" sap:VirtualizedContainerService.HintSize="502,548" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[Number Mod RootNumber = 0]" DisplayName="If Number Mod RootNumber = 0" sap:VirtualizedContainerService.HintSize="502,548" sap2010:WorkflowViewState.IdRef="If_1">
                   <If.Then>
                     <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,222" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
@@ -139,7 +131,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign DisplayName="Assign - IsPrime" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[IsPrime]</OutArgument>
                         </Assign.To>
@@ -147,7 +139,7 @@
                           <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:Break sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Break_1" />
+                      <ui:Break DisplayName="Break while loop" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Break_1" />
                     </Sequence>
                   </If.Then>
                   <If.Else>
@@ -157,7 +149,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign DisplayName="Assign - root number" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_3">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Int32">[RootNumber]</OutArgument>
                         </Assign.To>
@@ -170,11 +162,8 @@
                 </If>
               </Sequence>
             </ui:InterruptibleWhile.Body>
-            <ui:InterruptibleWhile.Condition>
-              <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="RootNumber&gt;1" />
-            </ui:InterruptibleWhile.Condition>
           </ui:InterruptibleWhile>
-          <If Condition="[IsPrime]" sap:VirtualizedContainerService.HintSize="570,424" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[IsPrime]" DisplayName="If IsPrime is true" sap:VirtualizedContainerService.HintSize="570,424" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
@@ -182,7 +171,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign DisplayName="Assign - to prime list" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
                   <Assign.To>
                     <OutArgument x:TypeArguments="scg:List(x:String)">[PrimeNumberList]</OutArgument>
                   </Assign.To>
@@ -202,7 +191,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <Assign sap:VirtualizedContainerService.HintSize="570,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+          <Assign DisplayName="Assign - decrement number" sap:VirtualizedContainerService.HintSize="570,114" sap2010:WorkflowViewState.IdRef="Assign_4">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Int32">[Number]</OutArgument>
             </Assign.To>
@@ -210,7 +199,7 @@
               <InArgument x:TypeArguments="x:Int32">[Number-1]</InArgument>
             </Assign.Value>
           </Assign>
-          <Assign sap:VirtualizedContainerService.HintSize="570,105" sap2010:WorkflowViewState.IdRef="Assign_6">
+          <Assign DisplayName="Assign - IsPrime (1)" sap:VirtualizedContainerService.HintSize="570,105" sap2010:WorkflowViewState.IdRef="Assign_6">
             <Assign.To>
               <OutArgument x:TypeArguments="x:Boolean">[IsPrime]</OutArgument>
             </Assign.To>
@@ -220,10 +209,8 @@
           </Assign>
         </Sequence>
       </ui:InterruptibleWhile.Body>
-      <ui:InterruptibleWhile.Condition>
-        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Number&gt;1" />
-      </ui:InterruptibleWhile.Condition>
     </ui:InterruptibleWhile>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="638,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Join(&quot;,&quot;,PrimeNumberList)]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box - PrimeNumberList" sap:VirtualizedContainerService.HintSize="638,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Join(&quot;,&quot;,PrimeNumberList)]" />
+    <ui:LogMessage DisplayName="Log Message - Completed" sap:VirtualizedContainerService.HintSize="638,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Found all prime numbers&quot;]" />
   </Sequence>
 </Activity>

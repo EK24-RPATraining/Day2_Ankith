@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Tiles View",
+  "Type": "Element",
+  "Id": "5bgpR1VK60O11HY8EqSoVA",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/5bgpR1VK60O11HY8EqSoVA",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/HoiGPvDE50WbgE8GMFItXg",
+  "Created": "2024-12-02T10:33:28.9305003Z",
+  "Updated": "2024-12-02T10:33:28.9305003Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

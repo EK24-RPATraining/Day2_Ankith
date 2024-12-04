@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5IyfSHdIRk-d_SRve6D-9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demos.telerik.com/aspnet-ajax/carrental/default.aspx" CVScreenId="aee223b2-76c1-4dec-8c50-439e81514e18" CvTextArea="1035, 504, 55, 12" CvTextArgument="Tiles View" CvType="Text" DesignTimeRectangle="1011, 496, 150, 22" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='rtbIn' type='' tag='SPAN' aaname='' check:innerText='Tiles View' /&gt;" Guid="732629e9-1430-4bb1-8ed5-885a856403c4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Rental Sample Application for ASP.NET AJAX | Telerik UI for ASP.NET AJAX' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f479248dbef58369be5c2e49595913d2.png" xmlns="">0Q2V525vZ3US82EBF4UyRxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

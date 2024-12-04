@@ -82,7 +82,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Read student mark out of 100 and Calculate the Grade based on the following conditions:&#xA;Mark Grade&#xA;&gt;80 A+&#xA;&gt;60 A&#xA;&gt;50 B&#xA;&lt;50 C" DisplayName="GradeCalculatorSequence" sap:VirtualizedContainerService.HintSize="742,1671" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Read student mark out of 100 and Calculate the Grade based on the following conditions:&#xA;Mark Grade&#xA;&gt;80 A+&#xA;&gt;60 A&#xA;&gt;50 B&#xA;&lt;50 C" DisplayName="GradeCalculatorSequence" sap:VirtualizedContainerService.HintSize="716,1844" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Selection" />
     </Sequence.Variables>
@@ -92,7 +92,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="" Condition="[Selection=&quot;Yes&quot;]" DisplayName="while more marks present do" sap:VirtualizedContainerService.HintSize="518,1576" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="" Condition="[Selection=&quot;Yes&quot;]" DisplayName="while more marks present do" sap:VirtualizedContainerService.HintSize="518,1585" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,1439" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <Sequence.Variables>
@@ -121,7 +121,7 @@
             </ui:IfElseIfV2.Else>
             <ui:IfElseIfV2.ElseIfs>
               <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Marks&gt;60]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
+                <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Marks&gt;60]" DisplayName="If else if block (1)" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
                   <ui:IfElseIfBlock.Then>
                     <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
@@ -167,5 +167,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleDoWhile>
+    <ui:LogMessage DisplayName="Log Message - completion" sap:VirtualizedContainerService.HintSize="518,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;completed grade calculation&quot;]" />
   </Sequence>
 </Activity>

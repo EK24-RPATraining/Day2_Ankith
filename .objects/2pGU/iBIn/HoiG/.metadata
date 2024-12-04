@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Car Rental Sample Application for ASP.NE",
+  "Type": "Screen",
+  "Id": "HoiGPvDE50WbgE8GMFItXg",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/HoiGPvDE50WbgE8GMFItXg",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/iBInl-dBwEGc7Sj6PFV_Bw",
+  "Created": "2024-12-02T10:09:32.5215463Z",
+  "Updated": "2024-12-02T10:09:32.5215463Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

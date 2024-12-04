@@ -79,7 +79,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Read the Number of completed years of Service of Employee, calculate the Bonus % based on the following:&#xA;Years of Experience Bonus %&#xA;&lt; 1 Not Eligible&#xA;&lt;5 10 % &#xA;&lt;10 15%&#xA;&gt;10 25%" DisplayName="BonusCalculatorSequence" sap:VirtualizedContainerService.HintSize="742,1357" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Read the Number of completed years of Service of Employee, calculate the Bonus % based on the following:&#xA;Years of Experience Bonus %&#xA;&lt; 1 Not Eligible&#xA;&lt;5 10 % &#xA;&lt;10 15%&#xA;&gt;10 25%" DisplayName="BonusCalculatorSequence" sap:VirtualizedContainerService.HintSize="716,1530" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Double" Name="Years" />
     </Sequence.Variables>
@@ -94,7 +94,7 @@
         <OutArgument x:TypeArguments="x:Double">[Years]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:IfElseIfV2 Condition="[Years&lt;1]" DisplayName="check bonus" sap:VirtualizedContainerService.HintSize="450,991" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+    <ui:IfElseIfV2 Condition="[Years&lt;1]" DisplayName="check bonus" sap:VirtualizedContainerService.HintSize="450,1000" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
       <ui:IfElseIfV2.Else>
         <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <sap:WorkflowViewStateService.ViewState>
@@ -107,7 +107,7 @@
       </ui:IfElseIfV2.Else>
       <ui:IfElseIfV2.ElseIfs>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Years&lt;5]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Years&lt;5]" DisplayName="If else if block (1)" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
             <ui:IfElseIfBlock.Then>
               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
@@ -144,5 +144,6 @@
         </Sequence>
       </ui:IfElseIfV2.Then>
     </ui:IfElseIfV2>
+    <ui:LogMessage DisplayName="Log Message - calculation complete" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;completed bonus calculation&quot;]" />
   </Sequence>
 </Activity>

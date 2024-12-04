@@ -109,7 +109,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Read and Check if a given number is prime. Display the result with appropriate message" DisplayName="CheckPrimeNumber" sap:VirtualizedContainerService.HintSize="742,4075" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Read and Check if a given number is prime. Display the result with appropriate message" DisplayName="CheckPrimeNumber" sap:VirtualizedContainerService.HintSize="716,4075" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="Number" />
       <Variable x:TypeArguments="x:Boolean" Default="True" Name="IsPrime" />
@@ -167,9 +167,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:IfElseIfV2 Condition="[Number&lt;=1]" DisplayName="Check if number is greater than 1" sap:VirtualizedContainerService.HintSize="638,2707" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+    <ui:IfElseIfV2 Condition="[Number&lt;=1]" DisplayName="Check if number is greater than 1" sap:VirtualizedContainerService.HintSize="638,2675" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
       <ui:IfElseIfV2.Else>
-        <Sequence sap2010:Annotation.AnnotationText="checking if the odd number greater than 1 is prime" DisplayName="Else" sap:VirtualizedContainerService.HintSize="604,1585" sap2010:WorkflowViewState.IdRef="Sequence_4">
+        <Sequence sap2010:Annotation.AnnotationText="checking if the odd number greater than 1 is prime" DisplayName="number &lt; 1" sap:VirtualizedContainerService.HintSize="604,1585" sap2010:WorkflowViewState.IdRef="Sequence_4">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Default="0" Name="IteratorNumber" />
           </Sequence.Variables>
@@ -246,7 +246,7 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,338" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence DisplayName="if IsPrime" sap:VirtualizedContainerService.HintSize="468,338" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -295,7 +295,7 @@
       </ui:IfElseIfV2.Else>
       <ui:IfElseIfV2.ElseIfs>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Number = 2]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[Number = 2]" DisplayName="If else if block (1)" sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
             <ui:IfElseIfBlock.Then>
               <Sequence sap2010:Annotation.AnnotationText="2 is the only even prime number" DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,369" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
