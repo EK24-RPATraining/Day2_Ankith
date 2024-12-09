@@ -1,0 +1,12 @@
+﻿{
+  "Name": "invoice.pdf - WPS Office",
+  "Type": "App",
+  "Id": "le4-TKTRqEmPOZEdmhH3gg",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/le4-TKTRqEmPOZEdmhH3gg",
+  "Created": "2024-12-09T10:08:46.8401031Z",
+  "Updated": "2024-12-09T10:08:46.8401031Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

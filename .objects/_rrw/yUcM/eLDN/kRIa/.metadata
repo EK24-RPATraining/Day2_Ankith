@@ -1,0 +1,14 @@
+﻿{
+  "Name": "friendship",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kRIavIM-sUCVPBw4ML9XSQ",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/kRIavIM-sUCVPBw4ML9XSQ",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/eLDNFgP0sU2_jru2kcCAkg",
+  "Created": "2024-12-09T06:09:12.6099071Z",
+  "Updated": "2024-12-09T06:09:12.6099071Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

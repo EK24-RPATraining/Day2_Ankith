@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Quotes to Scrape",
+  "Type": "App",
+  "Id": "_rrw7RlNeUqP9L5rRPafCA",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/_rrw7RlNeUqP9L5rRPafCA",
+  "Created": "2024-12-09T05:52:17.4667128Z",
+  "Updated": "2024-12-09T05:52:17.4667128Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

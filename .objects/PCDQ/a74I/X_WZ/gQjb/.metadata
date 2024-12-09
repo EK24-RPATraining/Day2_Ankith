@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Sun Sign Finder",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "gQjb1HgwC0aFH9LWcBFjbQ",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/gQjb1HgwC0aFH9LWcBFjbQ",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/X_WZnkqmmUiW68rDAXbjwA",
+  "Created": "2024-12-09T04:43:57.2693374Z",
+  "Updated": "2024-12-09T04:43:57.2693374Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

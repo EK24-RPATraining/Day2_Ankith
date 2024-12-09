@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0EpBVMeLlki4htu-a02gZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="262fa6be-e9f2-417c-9c40-fe4bd862e850" CvElementArea="582, 340, 203, 32" CvTextArea="658, 349, 50, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="583, 342, 200, 29" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='sub' tag='INPUT' type='submit' class='button' aaname='Submit' check:text='Submit' /&gt;" Guid="a7ea7c31-9ff1-4c36-aae7-bca811352260" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="262fa6be-e9f2-417c-9c40-fe4bd862e850" CvTextArea="613, 215, 140, 16" CvTextArgument="Sun Sign Finder" CvType="Text" DesignTimeRectangle="358, 207, 650, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='sc' tag='DIV' type='' class='form-h' aaname='Sun Sign Finder' check:innerText='Sun Sign Finder' /&gt;" Guid="be3e91cd-17b8-48c3-879d-9878b2395b95" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4364e402f5abbec206606fa2452084d8.png" xmlns="">0k60sTap9zUCMQm304Vi1iw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

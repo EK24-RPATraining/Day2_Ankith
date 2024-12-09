@@ -1,0 +1,13 @@
+﻿{
+  "Name": "invoice.pdf - WPS Office",
+  "Type": "Screen",
+  "Id": "xJykPgkS5UyKpaIiaMjCdA",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/xJykPgkS5UyKpaIiaMjCdA",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/Hqqjt8A25Uyqm25uWEQEcA",
+  "Created": "2024-12-09T10:08:46.8808202Z",
+  "Updated": "2024-12-09T10:08:46.8808202Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

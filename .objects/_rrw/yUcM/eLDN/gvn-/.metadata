@@ -1,0 +1,14 @@
+﻿{
+  "Name": "reading",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gvn-xo2adkmXDN9jpRCqiA",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/gvn-xo2adkmXDN9jpRCqiA",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/eLDNFgP0sU2_jru2kcCAkg",
+  "Created": "2024-12-09T05:58:18.0681285Z",
+  "Updated": "2024-12-09T05:58:18.0681285Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

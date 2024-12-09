@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OgMGrCF7CEOtNmhzi4Pb5A" Reference="58mXOh3dOECHucwmvvUc_w/jIRF4ShvkUOai0hPKQbO0A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="astrologyfutureeye.com/zodiac/libra-sign" CVScreenId="61c6ae12-0fe2-4a7d-bda9-ae44d70bf702" CvTextArea="737, 376, 120, 14" CvType="AnyWordGroup" DesignTimeRectangle="667, 367, 261, 31" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" Guid="67ad0520-1e98-49b1-ae46-6f9ec0dc8c58" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Libra Horoscope - Strengths, Weaknesses, Likes, Dislikes' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d2f91c0130e59ad03868383a855c5841.png" xmlns="">0luN5dVn8hkqGjyBwwSMtXQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

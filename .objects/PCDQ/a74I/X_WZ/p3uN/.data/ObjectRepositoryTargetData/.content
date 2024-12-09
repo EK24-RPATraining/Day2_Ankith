@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="y3ir0oNN7US9B4Lz3hWAWQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="astrologyfutureeye.com/astro-calculators/sun-sign-calculator" CVScreenId="262fa6be-e9f2-417c-9c40-fe4bd862e850" CvElementArea="591, 293, 185, 35" CvType="InputBox" DesignTimeRectangle="592, 294, 182, 32" DesignTimeScaleFactor="1" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='month' tag='SELECT' type='' class='input w28' aaname='' /&gt;" Guid="1b2c0535-5715-4fcc-85da-fdfbc1caaacd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="262fa6be-e9f2-417c-9c40-fe4bd862e850" CvTextArea="407, 279, 166, 15" CvTextArgument="Birth Details (DD/MM/YY)" CvType="Text" DesignTimeRectangle="407, 278, 553, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='sc' tag='SPAN' type='' class='lable' aaname='Birth Details (DD/MM/YY)' check:innerText='Birth Details (DD/MM/YY)' /&gt;" Guid="456c1a2f-121f-4e16-bfb9-d07ae81d9773" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="262fa6be-e9f2-417c-9c40-fe4bd862e850" CvTextArea="613, 215, 140, 16" CvTextArgument="Sun Sign Finder" CvType="Text" DesignTimeRectangle="358, 207, 650, 36" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='sc' tag='DIV' type='' class='form-h' aaname='Sun Sign Finder' check:innerText='Sun Sign Finder' /&gt;" Guid="129485d1-6a73-4fd2-8bb4-82fd64082f0a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3b9dc6a58d3a66164d0102f04b57605e.png" xmlns="">09-BrpccaJUm9JVnzq8iMNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

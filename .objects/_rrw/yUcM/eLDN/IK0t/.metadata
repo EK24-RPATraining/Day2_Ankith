@@ -1,0 +1,14 @@
+﻿{
+  "Name": "inspirational",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "IK0to-dqFEidONtKf5PsjQ",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/IK0to-dqFEidONtKf5PsjQ",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/eLDNFgP0sU2_jru2kcCAkg",
+  "Created": "2024-12-09T06:13:12.3335375Z",
+  "Updated": "2024-12-09T06:13:12.3335375Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

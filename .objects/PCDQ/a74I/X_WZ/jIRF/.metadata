@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cancer Astrology",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "jIRF4ShvkUOai0hPKQbO0A",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/jIRF4ShvkUOai0hPKQbO0A",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/X_WZnkqmmUiW68rDAXbjwA",
+  "Created": "2024-12-09T04:53:57.8070631Z",
+  "Updated": "2024-12-09T04:53:57.8070631Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

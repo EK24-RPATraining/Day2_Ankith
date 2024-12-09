@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="glHfBa5Zak-D4KftNG3rPQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="a4a1744a-dd41-461c-8e9f-51cfb115b6ab" CvTextArea="1110, 429, 40, 16" CvType="AnyWordGroup" DesignTimeRectangle="1110, 429, 40, 16" DesignTimeScaleFactor="1" ElementType="Text" Guid="022d5856-d7bf-4746-8922-593369d42db1" ScopeSelectorArgument="&lt;wnd app='wps.exe' cls='OpusApp' title='invoice.pdf - WPS Office' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a4a1744a-dd41-461c-8e9f-51cfb115b6ab" CvTextArea="994, 430, 44, 14" CvTextArgument="TOTAL" CvType="Text" DesignTimeRectangle="994, 430, 44, 14" ElementType="Text" Guid="15c90b37-9f84-4a8b-b577-5ddd19d46789" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="32987e74375be0a304b38a2c531f293e.png" xmlns="">05m0vaxaolEiRDnnA2Ge8_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

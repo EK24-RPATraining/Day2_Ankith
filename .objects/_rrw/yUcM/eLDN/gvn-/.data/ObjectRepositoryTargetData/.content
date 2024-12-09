@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="58bCgUfbfEGZBgDIZqiXvg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="quotes.toscrape.com/page/3" CVScreenId="86ff2067-b53a-4720-ad51-3cc5b70c8232" CvElementArea="1190, 445, 61, 24" CvTextArea="1197, 450, 48, 15" CvTextArgument="reading" CvType="Button" DesignTimeRectangle="1193, 447, 57, 20" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='reading' class='tag' tag='A' type='' check:innerText='reading' /&gt;" Guid="5b776a9a-3318-480a-8ef7-9d68481b4adf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quotes to Scrape' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d9d2df52340fda71e4bd4c16d6820987.png" xmlns="">03moGaSBVgkmZwisLjWpyNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

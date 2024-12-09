@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Sun Sign Calculator  Western Zodiac Sign",
+  "Type": "Screen",
+  "Id": "X_WZnkqmmUiW68rDAXbjwA",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/X_WZnkqmmUiW68rDAXbjwA",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/a74IcmZ6N02CCBUOH5lWvw",
+  "Created": "2024-12-09T04:37:48.3870157Z",
+  "Updated": "2024-12-09T04:37:48.3870157Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
