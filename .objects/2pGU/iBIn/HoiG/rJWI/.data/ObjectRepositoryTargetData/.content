@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OYAqw69vq0-HCSDwPVplCA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="demos.telerik.com/aspnet-ajax/carrental/default.aspx" CVScreenId="16b6fdf5-6152-49f3-8295-1b65a163fa53" CvTextArea="184, 177, 165, 10" CvTextArgument="CAR RENTAL SAMPLE APPLICATION" CvType="Text" DesignTimeRectangle="184, 177, 165, 11" DesignTimeScaleFactor="1" ElementType="Text" Guid="b7312b8b-92f0-4660-aa11-8d1c4af0399e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Car Rental Sample Application for ASP.NET AJAX | Telerik UI for ASP.NET AJAX' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="241, 211, 436, 195" ElementType="Button" FuzzySelectorArgument="&lt;webctrl class='dateRangeRow' tag='DIV' type='' aaname='                                                                ' check:innerText='or View vehicles available today' /&gt;" Guid="5b6d5b47-3dbb-4a73-b4d5-1136b9ff5b4b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9b08f2afec2202c607f5a80caea2cfa5.png" xmlns="">0rHitLVPDd0KDkju8S9XlYQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

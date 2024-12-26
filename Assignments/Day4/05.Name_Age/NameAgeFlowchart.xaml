@@ -92,14 +92,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID3</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+    <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">315,135</av:Point>
           <av:Size x:Key="ShapeSize">110,70</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">425,170 475,170</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">425,170 460,170 460,125</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Name" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter Name" Title="Enter Values">
@@ -113,55 +113,101 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:InputDialog>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+        <FlowStep x:Name="__ReferenceID3" sap2010:WorkflowViewState.IdRef="FlowStep_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">475,135</av:Point>
+              <av:Point x:Key="ShapeLocation">405,55</av:Point>
+              <av:PointCollection x:Key="ConnectorLocation">515,90 530,90 530,135</av:PointCollection>
               <av:Size x:Key="ShapeSize">110,70</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">530,205 530,255</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Age" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter age" Title="Enter values">
-            <ui:InputDialog.Result>
-              <OutArgument x:TypeArguments="x:Int32">[UserAge]</OutArgument>
-            </ui:InputDialog.Result>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VerifyAndNotify - Invoke Workflow File (VerifyAndNotify.xaml)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="VerifyAndNotify.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="in_Condition">[String.IsNullOrEmpty(UserName)]</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Reason">UserName is empty</InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_BotName">NameAgeFlowchart</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-          </ui:InputDialog>
+          </ui:InvokeWorkflowFile>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+            <FlowStep x:Name="__ReferenceID0" sap2010:WorkflowViewState.IdRef="FlowStep_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">475,255</av:Point>
+                  <av:Point x:Key="ShapeLocation">475,135</av:Point>
                   <av:Size x:Key="ShapeSize">110,70</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">475,290 425,290</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">530,205 530,240 655,240</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Greeting Message Box" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Format(&quot;Hello, {0}! You are {1} years old.&quot;,UserName,UserAge.ToString)]">
+              <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Age" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter age" Title="Enter values">
+                <ui:InputDialog.Result>
+                  <OutArgument x:TypeArguments="x:Int32">[UserAge]</OutArgument>
+                </ui:InputDialog.Result>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </ui:MessageBox>
+              </ui:InputDialog>
               <FlowStep.Next>
-                <FlowStep x:Name="__ReferenceID2">
+                <FlowStep x:Name="__ReferenceID4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">315,255</av:Point>
+                      <av:Point x:Key="ShapeLocation">655,205</av:Point>
+                      <av:PointCollection x:Key="ConnectorLocation">710,275 710,290 585,290</av:PointCollection>
                       <av:Size x:Key="ShapeSize">110,70</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message - complete" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Complete program&quot;]">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VerifyAndNotify - Invoke Workflow File (VerifyAndNotify.xaml)(2)" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="Trace" LogEntry="WithArguments" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="VerifyAndNotify.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:Boolean" x:Key="in_Condition">[String.IsNullOrEmpty(UserAge.ToString)]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_Reason">UserAge is empty</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_BotName">NameAgeFlowchart</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
+                  </ui:InvokeWorkflowFile>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">475,255</av:Point>
+                          <av:Size x:Key="ShapeSize">110,70</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">475,290 425,290</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Greeting Message Box" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[String.Format(&quot;Hello, {0}! You are {1} years old.&quot;,UserName,UserAge.ToString)]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:MessageBox>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">315,255</av:Point>
+                              <av:Size x:Key="ShapeSize">110,70</av:Size>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message - complete" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Complete program&quot;]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:LogMessage>
+                        </FlowStep>
+                      </FlowStep.Next>
+                    </FlowStep>
+                  </FlowStep.Next>
                 </FlowStep>
               </FlowStep.Next>
             </FlowStep>
@@ -172,5 +218,7 @@
     <x:Reference>__ReferenceID0</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID3</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
   </Flowchart>
 </Activity>

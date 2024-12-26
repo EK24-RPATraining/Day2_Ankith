@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CAR RENTAL SAMPLE APPLI…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "rJWIhsljb06waN7250c6_w",
+  "Reference": "58mXOh3dOECHucwmvvUc_w/rJWIhsljb06waN7250c6_w",
+  "ParentRef": "58mXOh3dOECHucwmvvUc_w/HoiGPvDE50WbgE8GMFItXg",
+  "Created": "2024-12-26T09:28:16.4962111Z",
+  "Updated": "2024-12-26T09:28:16.4962111Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
