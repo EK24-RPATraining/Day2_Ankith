@@ -1,8 +1,8 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="VerifyAndNotify" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_Condition" Type="InArgument(x:Boolean)" />
     <x:Property Name="in_Reason" Type="InArgument(x:String)" />
     <x:Property Name="in_BotName" Type="InArgument(x:String)" />
+    <x:Property Name="in_NegetiveCondition" Type="InArgument(x:Boolean)" />
   </x:Members>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
@@ -128,7 +128,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[in_Condition]" DisplayName="Check Condition and Notify on Failure" sap:VirtualizedContainerService.HintSize="538,1229" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[in_NegetiveCondition]" DisplayName="Check Condition and Notify on Failure" sap:VirtualizedContainerService.HintSize="538,1229" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,1011" sap2010:WorkflowViewState.IdRef="Sequence_7">
           <sap:WorkflowViewStateService.ViewState>
@@ -148,7 +148,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Hey, &#xD;&#xA;&#x9;Your bot &quot;+in_BotName+&quot; failed as &quot;+in_Reason+&quot;.&quot;]" BodyType="Text" DisplayName="Send Email Notification for Failure" sap:VirtualizedContainerService.HintSize="434,400" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[in_BotName+&quot; Bot failed&quot;]" To="ajincture@gmail.com" UseDocumentAsBody="False">
+                  <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" Body="[&quot;Hey, &#xA;&#x9;Your bot &quot;+in_BotName+&quot; failed as &quot;+in_Reason+&quot;.&quot;]" BodyType="Text" DisplayName="Send Email Notification for Failure" sap:VirtualizedContainerService.HintSize="434,400" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[in_BotName+&quot; Bot failed&quot;]" To="ajincture@gmail.com" UseDocumentAsBody="False">
                     <umab:SendMailX.Files>
                       <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                     </umab:SendMailX.Files>
